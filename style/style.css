@@ -1,0 +1,46 @@
+.box{
+    display: inline-block;
+}
+
+.cal{
+    border: 1.5px #d6d5d5 solid;
+    width: 280px;
+    position: absolute;
+    height: 410px;
+}
+
+.text{
+    margin: 10px;
+    width: 250px;
+    height: 65px;
+    font-size: 40px;
+    direction: rtl;
+    border: 1.5px #d6d5d5 solid;
+}
+
+.num , .total{
+    text-align: center;
+    width: 50px;
+    border: 1.5px #d6d5d5 solid;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.num{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #faf8f8;
+}
+
+.n{
+    background-color: #f0efef;
+}
+
+.total{
+    height: 240px;
+    position: relative;
+    bottom: 253px;
+    left: 211px;
+    line-height: 250px;
+    background-color: rgb(32, 121, 255);
+}
