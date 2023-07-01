@@ -8,46 +8,42 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <div class="cal box">
-        <input type="text" class="text" id="text"><br>
-        <div>
-            <div class="box">
-                <div>
-                    <div class="num n box" onclick="display('+')">+</div>
-                    <div class="num n box" onclick="display('-')">-</div>
-                    <div class="num n box" onclick="display('×')">×</div>
-                    <div class="num n box" onclick="display('/')">÷</div>
-                </div>
-                <div>
-                    <div class="num box" onclick="display('7')">7</div>
-                    <div class="num box" onclick="display('8')">8</div>
-                    <div class="num box" onclick="display('9')">9</div>
-                    
-                </div>
-                
-                <div>
-                    <div class="num box" onclick="display('4')">4</div>
-                    <div class="num box" onclick="display('5')">5</div>
-                    <div class="num box" onclick="display('6')">6</div>
-                </div>
-                <div>
-                    <div class="num box" onclick="display('1')">1</div>
-                    <div class="num box" onclick="display('2')">2</div>
-                    <div class="num box" onclick="display('3')">3</div>
-                </div>
-                <div>
-                    <div class="num box" onclick="display('0')">0</div>
-                    <div class="num box" onclick="display('.')">.</div>
-                    <div class="num box" onclick="clr()">C</div>
-                </div>
-                <div>
-                    <div class="total box" onclick="total()">=</div>
-                </div>
-            </div>
-            
-        </div>    
+    <div>
+        <table class="table">
+            <tr><input type="text" class="text" name="text" id="text" value=""></tr>
+            <tr>
+                <td><input type="button" class="button" value="7" onclick="display('7')"></td>
+                <td><input type="button" class="button" value="8" onclick="display('8')"></td>
+                <td><input type="button" class="button" value="9" onclick="display('9')"></td>
+                <td><input type="button" class="button" value="+" onclick="display('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="4" onclick="display('4')"></td>
+                <td><input type="button" class="button" value="5" onclick="display('5')"></td>
+                <td><input type="button" class="button" value="6" onclick="display('6')"></td>
+                <td><input type="button" class="button" value="-" onclick="display('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="1" onclick="display('1')"></td>
+                <td><input type="button" class="button" value="2" onclick="display('2')"></td>
+                <td><input type="button" class="button" value="3" onclick="display('3')"></td>
+                <td><input type="button" class="button" value="*" onclick="display('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="0" onclick="display('0')"></td>
+                <td><input type="button" class="button" value="." onclick="display('.')"></td>
+                <td><input type="button" class="button" value="/" onclick="display('/')"></td>
+                <td><input type="button" class="button" value="=" onclick="total()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button clear" value="clr" onclick="clr()"></td>
+                <td><input type="button" class="button" value="(" onclick="display('(')"></td>
+                <td><input type="button" class="button" value=")" onclick="display(')')"></td>
+            </tr>
+        </table>
     </div>
-
+    
+    
     <script src="./script/script.js"></script>
 </body>
 </html>
